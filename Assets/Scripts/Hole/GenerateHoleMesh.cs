@@ -8,11 +8,13 @@ public class GenerateHoleMesh : MonoBehaviour
     [SerializeField]
     private int nVertices;
 
-    // Start is called before the first frame update
-    public PolygonCollider2D hole2DCollider;
-    public PolygonCollider2D ground2DCollider;
-    public MeshCollider GeneratedMeshCollider;
-    Mesh GeneratedMesh; 
+    [SerializeField]
+    private PolygonCollider2D hole2DCollider;
+    [SerializeField]
+    private PolygonCollider2D ground2DCollider;
+    [SerializeField]
+    private MeshCollider GeneratedMeshCollider;
+    private Mesh GeneratedMesh; 
     
     void Awake(){
             float initRadius = 0.5f;

@@ -21,6 +21,6 @@ public class CameraFollow : MonoBehaviour
 
         transform.position = new Vector3(hole.position.x,
          Mathf.Sin(angle * Mathf.Deg2Rad) * distance,
-         hole.position.z-Mathf.Cos(angle* Mathf.Deg2Rad)*distance-holeScale/2.5f);
+         hole.position.z-Mathf.Cos(angle* Mathf.Deg2Rad)*distance-holeScale/2f);
     }
 }
